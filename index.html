@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card copy Desing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+       <section class="first-section">
+         <div class="card" onclick="selectCard(this)">
+       <div class="qualification">
+        <span>Easy</span>
+       </div>
+       <strong>👤</strong>
+       <h3>Profile Card</h3>
+       <p>Avatar, name, bio, social links. Classic card layout.</p>
+       <div class="tag">
+        <span>flexbox</span>
+        <span>hover</span>
+        <span>border-radius</span>
+       </div>
+       </div>
+         <div class="card" onclick="selectCard(this)">
+       <div class="qualification">
+        <span>Easy</span>
+       </div>
+       <strong>🖼️</strong>
+       <h3>Photo Gallery</h3>
+       <p>Grid of image boxes with hover zoom effect.</p>
+       <div class="tag">
+        <span>flexbox</span>
+        <span>hover</span>
+        <span>border-radius</span>
+       </div>
+       </div>
+       </section>
+       <section class="first-section">
+         <div class="card" onclick="selectCard(this)">
+       <div class="qualification medium">
+        <span>Medium</span>
+       </div>
+       <strong>💬</strong>
+       <h3>Testimonial Cards</h3>
+       <p>Review cards with stars, quote, avatar and name.</p>
+       <div class="tag">
+        <span>flexbox</span>
+        <span>hover</span>
+        <span>border-radius</span>
+       </div>
+       </div>
+         <div class="card" onclick="selectCard(this)">
+       <div class="qualification medium">
+        <span>Medium</span>
+       </div>
+       <strong>📊</strong>
+       <h3>Stats Dashboard</h3>
+       <p>4 stat cards showing numbers, icons, labels.</p>
+       <div class="tag">
+        <span>flexbox</span>
+        <span>hover</span>
+        <span>border-radius</span>
+       </div>
+       </div>
+       </section>
+       <section class="first-section">
+         <div class="card" onclick="selectCard(this)">
+       <div class="qualification hard">
+        <span>Hard</span>
+       </div>
+       <strong>🚀</strong>
+       <h3>Landing Page Hero</h3>
+       <p>Full hero section — navbar + headline + button + image side by side</p>
+       <div class="tag">
+        <span>flexbox</span>
+        <span>hover</span>
+        <span>border-radius</span>
+       </div>
+       </div>
+         <div class="card" onclick="selectCard(this)">
+       <div class="qualification hard">
+        <span>Hard</span>
+       </div>
+       <strong>🎵</strong>
+       <h3>Music Player Card</h3>
+       <p>Song name, artist, progress bar, play/pause controls.</p>
+       <div class="tag">
+        <span>flexbox</span>
+        <span>hover</span>
+        <span>border-radius</span>
+       </div>
+       </div>
+       </section>
+    
+    </div>
+    <script>
+        function selectCard(card) {
+            // Remove selected class from all cards
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+            // Add selected class to clicked card
+            card.classList.add('selected');
+        }
+    </script>
+</body>
+</html>
